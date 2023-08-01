@@ -1,0 +1,200 @@
+/* styles.css */
+
+/* Estilo para el formulario */
+.container {
+  max-width: 50%;
+}
+
+/* Estilo para el título */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas */
+.form-label {
+  font-weight: bold;
+}
+
+/* Estilo para los campos de entrada */
+.form-control {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Estilos para la tabla */
+.table-custom {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-custom th,
+.table-custom td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  font-size: 12px;
+}
+
+/* Estilos para la fila con color de fondo */
+.table-custom tr.highlighted {
+  background-color: #ff5c08;
+  color: #a4a4a4;
+}
+.form-label{
+  font-size: 12px;
+}
+
+
+.btn_mas {
+  background: url(../img/AgregarEnvigado.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  border: none;
+  float: right;
+  margin-top: -4%;
+}
+
+.btn_menos {
+  background: url(../img/eliminar_Blanco.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  border: none;
+  position: absolute;
+  right: 40px;
+  margin-top: -30px;
+}
+
+
+.btn_si {
+  background: url(/publicidadexterior/contenido/resources/img//Si.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  border: none;
+  position: absolute;
+  right: 40px;
+  margin-top: -50px;
+}
+
+.btn_no {
+  background: url(/publicidadexterior/contenido/resources/img/No.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  border: none;
+  position: absolute;
+  right: 40px;
+  margin-top: -50px;
+}
+
+.boton {
+  width: 128px;
+  height: 30px;
+  border: none;
+  position: absolute;
+  right: 0px;
+  margin-top: 5px;
+}
+
+.botonConsulta {
+  width: 108px;
+  height: 30px;
+  border: none;
+  right: 70px;
+  /* margin-top: 5px; */
+  float: right;
+}
+
+.botonConsultaInfoTemplate {
+  width: 108px;
+  height: 30px;
+  border: none;
+  right: 70px;
+  /* margin-top: 5px; */
+  float: left;
+}
+.botonFormularioConsulta {
+  width: 80px;
+  height: 30px;
+  border: none;
+  right: -1px;
+}
+
+#btn_guardar {
+  background: url(../img/GuardarEnvigado.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#btn_nuevoElemento {
+  background: url(../img/TipoElemento.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* width: 111px; */
+  /* width: 94px; */
+}
+#btn_consultaelemento {
+  background: url(../img/ElementosVencidosEnvigado.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 148px;
+  height: 30px;
+}
+
+#btn_eliminartodos {
+  background: url(../img/EliminarTodos.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 148px;
+  height: 30px;
+}
+
+#btn_nuevo{
+  background: url(../img/Nuevo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* width: 148px;
+  height: 30px; */
+  /* width: 94px; */
+}
+#btn_buscar{
+  background: url(../img/Buscar.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* text-align: right; */
+  /* float: right;
+  position: absolute; */
+}
+
+#btn_no{
+  background: url(/publicidadexterior/contenido/resources/img/No.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  border: none;
+  position: absolute;
+  right: 40px;
+  margin-top: -50px;
+}
+
+#btn_si{
+  background: url(/publicidadexterior/contenido/resources/img/Si.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  border: none;
+  position: absolute;
+  right: 40px;
+  margin-top: -50px;
+}
