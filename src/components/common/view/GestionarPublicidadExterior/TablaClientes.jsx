@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Table } from "react-bootstrap";
+import { Col, Table } from "react-bootstrap";
 import "../../../../styles/style.css";
 import Buttons from "../../Buttons";
 
@@ -10,22 +10,22 @@ const TablaClientes = ({ datos }) => {
 
   return (
     <div className="d-flex justify-content-center">
-      {/* Aplicar la clase table-custom a la tabla */}
-      <Table className="table-custom" style={{ maxWidth: "100%" }}>
-        <thead>
+      
+      <Table striped className="table-custom table-hover" style={{ maxWidth: "100%" }}>
+        <thead className="">
           <tr>
-            <th>Nombre de Cliente</th>
-            <th>Cédula/NIT</th>
-            <th>Número de Oficio</th>
-            <th>Número de Radicado</th>
-            <th>Fecha de Radicado</th>
-            <th>Estado</th>
-            <th>Editar</th>
+            <th className="table-resultado text-center">Nombre de Cliente</th>
+            <th className="table-resultado text-center">Cédula/NIT</th>
+            <th className="table-resultado text-center">Número de Oficio</th>
+            <th className="table-resultado text-center">Número de Radicado</th>
+            <th className="table-resultado text-center">Fecha de Radicado</th>
+            <th className="table-resultado text-center">Estado</th>
+            <th className="table-resultado text-center">Editar</th>
           </tr>
         </thead>
         <tbody>
           {datos.map((cliente) => (
-            <tr key={cliente.id} className="highlighted">
+            <tr key={cliente.id}>
               {" "}
               {/* Agregar la clase highlighted a la fila */}
               <td>{cliente.id_solicitud_publicidad}</td>
@@ -33,14 +33,12 @@ const TablaClientes = ({ datos }) => {
               <td>{cliente.numero_oficio}</td>
               <td>{cliente.numero_radicado}</td>
               <td>{cliente.fecha_radicado}</td>
-              <td>{cliente.estado}</td>
-              <td className="col-md-1">
-                <td>
+              <td className="text-center">{cliente.estado}</td>
+              <td className="text-center">
+                <Col className="col-12">
                   <Buttons color="btn-primary" size="btn-sm" label="1" />
-                </td>
-                <td>
                   <Buttons color="btn-danger" size="btn-sm" label="2" />
-                </td>
+                </Col>
               </td>
             </tr>
           ))}

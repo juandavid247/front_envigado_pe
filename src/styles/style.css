@@ -1,14 +1,77 @@
 /* styles.css */
+@font-face {
+  font-family: myriad;
+  font-weight: 500;
+  font-style: normal;
+  src: local("myriad"),
+   url("../fonts/myriad-pro/MYRIADPRO-REGULAR.ttf");
+ }
+ 
 
+* {
+  font-family:myriad ;
+  user-select: none;
+}
 /* Estilo para el formulario */
 .container {
   max-width: 50%;
 }
 
 /* Estilo para el título */
+.buscar{
+  background: url('../icons/img/Buscar.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100px;
+  height: 31px;
+}
+.nuevo{
+  background: url(../icons/img/Nuevo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100px;
+  height: 31px;
+}
+.tipoElemento{
+  background: url(../icons/img/TipoElemento.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 110px;
+  height: 31px;
+}
+/* .tituloGestionar {
+  color: #ff5c08;
+  font-family:myriad;
+  font-size: 17px;
+  font-weight: bold;
+} */
+.paginacion{
+  background-color: #f0f0f0;
+  align-items: center;
+}
+.custom-pagination span, .custom-pagination a  {
+  background-color: #d8d8d8;
+}
+.custom-pagination a:hover {
+  --bs-link-color-rgb: rgb(236, 125, 33);
+}
+.page-link {
+  color:#ed5c0b;
+}
+.active>.page-link, .page-link.active {
+  z-index: 3;
+  color: var(--bs-pagination-active-color);
+  background-color: #ed5c0b;
+  border-color: #31fd08;
+}
+
 h1 {
   text-align: center;
   margin-bottom: 20px;
+  font-family:myriad ;
 }
 
 /* Estilo para las etiquetas */
@@ -23,6 +86,7 @@ h1 {
   padding: 8px;
   border-radius: 4px;
   border: 1px solid #ccc;
+  height: 27px;
 }
 
 /* Estilos para la tabla */
@@ -36,13 +100,14 @@ h1 {
   border: 1px solid #ccc;
   padding: 8px;
   text-align: left;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 /* Estilos para la fila con color de fondo */
-.table-custom tr.highlighted {
+
+.table-custom .table-resultado{
   background-color: #ff5c08;
-  color: #a4a4a4;
+  color: #ffffff;
 }
 .form-label{
   font-size: 12px;
@@ -50,7 +115,7 @@ h1 {
 
 
 .btn_mas {
-  background: url(../img/AgregarEnvigado.png);
+  background: url(../icons/img/AgregarEnvigado.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 32px;
@@ -61,7 +126,7 @@ h1 {
 }
 
 .btn_menos {
-  background: url(../img/eliminar_Blanco.png);
+  background: url(../icons/img/eliminar_Blanco.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 20px;
@@ -73,7 +138,7 @@ h1 {
 }
 
 
-.btn_si {
+/* .btn_si {
   background: url(/publicidadexterior/contenido/resources/img//Si.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -95,7 +160,7 @@ h1 {
   position: absolute;
   right: 40px;
   margin-top: -50px;
-}
+} */
 
 .boton {
   width: 128px;
@@ -131,19 +196,13 @@ h1 {
 }
 
 #btn_guardar {
-  background: url(../img/GuardarEnvigado.png);
+  background: url(../icons/img/GuardarEnvigado.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
-#btn_nuevoElemento {
-  background: url(../img/TipoElemento.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  /* width: 111px; */
-  /* width: 94px; */
-}
+
 #btn_consultaelemento {
-  background: url(../img/ElementosVencidosEnvigado.png);
+  background: url(../icons/img/ElementosVencidosEnvigado.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 148px;
@@ -151,7 +210,7 @@ h1 {
 }
 
 #btn_eliminartodos {
-  background: url(../img/EliminarTodos.png);
+  background: url(../icons/img/EliminarTodos.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 148px;
@@ -159,21 +218,14 @@ h1 {
 }
 
 #btn_nuevo{
-  background: url(../img/Nuevo.png);
+  background: url(../icons/img/Nuevo.png);
   background-size: contain;
   background-repeat: no-repeat;
   /* width: 148px;
   height: 30px; */
   /* width: 94px; */
 }
-#btn_buscar{
-  background: url(../img/Buscar.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  /* text-align: right; */
-  /* float: right;
-  position: absolute; */
-}
+
 
 #btn_no{
   background: url(/publicidadexterior/contenido/resources/img/No.png);

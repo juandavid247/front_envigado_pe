@@ -1,11 +1,12 @@
-// importar el css aqui
+/* eslint-disable react/prop-types */
+import '../../icons/img/Buscar.png'
 
+const Buttons = (props) => {
 
-export const Buttons = (props) => {
   return (
-    <div>
-      <button className={`btn ${props.color} ${props.size}`}>{props.label}</button>
-    </div>
+    <>
+      <button className={`btn ${props.tipo} ${props.size}`}></button>
+    </>
   );
 };
 
